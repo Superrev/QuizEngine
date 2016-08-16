@@ -14,12 +14,12 @@
 <h1>QUIZ ANSWER</h1>
 
 <c:if test="${not empty correct}">
-    <div style="color:green;font-weight: bold;">
+    <div style="color:lawngreen;font-weight: bold;">
         <c:out value="${correct}" />
     </div>
 </c:if>
 <c:if test="${not empty incorrect}">
-    <div style="color:red;font-weight: bold;">
+    <div style="color:blue;font-weight: bold;">
         <c:out value="${incorrect}" />
     </div>
 </c:if>
