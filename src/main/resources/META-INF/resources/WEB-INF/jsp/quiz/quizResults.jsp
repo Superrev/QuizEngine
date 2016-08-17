@@ -6,7 +6,6 @@
 </head>
 <body>
 <h1>QUIZ RESULTS</h1>
-
 <c:if test="${not empty correct}">
     <div style="color:green;font-weight: bold;">
         <c:out value="${correct}" />

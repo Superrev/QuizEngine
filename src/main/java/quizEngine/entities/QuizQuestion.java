@@ -13,7 +13,6 @@ public class QuizQuestion {
     public static enum Difficulty { ALL, EASY, AVERAGE, DIFFICULT, CRAZY_HARD };
     public static enum QuizType { REGULAR, FLASH_CARD };
     public static enum QuizSize { SMALL, MEDIUM, LARGE, ALL };
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -27,6 +26,16 @@ public class QuizQuestion {
     @NotNull
     private Difficulty difficulty;
 
+    @NotNull
+    private int Wrong =0;
+
+    @NotNull
+    private int Correct =0;
+
+    @NotNull
+    private int totalQuestionsAsked = 39;
+
+
     private String question;
     private String correctMultipleChoiceAnswer;
     private String wrongMultipleChoiceAnswer1;
@@ -34,6 +43,9 @@ public class QuizQuestion {
     private String wrongMultipleChoiceAnswer3;
     private boolean trueOrFalse;
     private ArrayList<String> codeLines;
+    private ArrayList<Integer> totalQuestions;
+
+
 
     public long getId() {
         return id;
@@ -65,6 +77,30 @@ public class QuizQuestion {
 
     public void setDifficulty(Difficulty difficulty) {
         this.difficulty = difficulty;
+    }
+
+    public int getWrong() {
+        return Wrong;
+    }
+
+    public void setWrong(int wrong) {
+        Wrong = wrong;
+    }
+
+    public int getCorrect() {
+        return Correct;
+    }
+
+    public void setCorrect(int correct) {
+        Correct = correct;
+    }
+
+    public int getTotalQuestionsAsked() {
+        return totalQuestionsAsked;
+    }
+
+    public void setTotalQuestionsAsked(int totalQuestionsAsked) {
+        this.totalQuestionsAsked = totalQuestionsAsked;
     }
 
     public String getQuestion() {
@@ -122,4 +158,13 @@ public class QuizQuestion {
     public void setCodeLines(ArrayList<String> codeLines) {
         this.codeLines = codeLines;
     }
+
+    public ArrayList<Integer> getTotalQuestions() {
+        return totalQuestions;
+    }
+
+    public void setTotalQuestions(ArrayList<Integer> totalQuestions) {
+        this.totalQuestions = totalQuestions;
+    }
+//    public ArrayList<Integer> getTotalQuestions)
 }

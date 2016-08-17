@@ -11,10 +11,7 @@ import quizEngine.entities.QuizQuestion;
 import quizEngine.entities.QuizQuestionDAO;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Random;
+import java.util.*;
 
 @Controller
 @RequestMapping(value="/quiz/")
@@ -130,21 +127,46 @@ public class QuizController {
         model.addAttribute("quizQuestion",quizQuestion);
         model.remove("correct");
         model.remove("incorrect");
+
         if(quizQuestion.getQuestionType().equals(QuizQuestion.QuestionType.MULTIPLE_CHOICE)) {
             if (multiAnswer != null && multiAnswer.equalsIgnoreCase("yes")) {
                 model.addAttribute("correct","Right on Bro! Keep calm and code on");
+                answersCorrect();
             } else {
                 model.addAttribute("incorrect","Sorry DUUUDE....Better luck next time!");
+                answersWrong();
             }
         } else if (quizQuestion.getQuestionType().equals(QuizQuestion.QuestionType.TRUE_FALSE)) {
             if(trueFalseAnswer != null && quizQuestion.isTrueOrFalse() == Boolean.valueOf(trueFalseAnswer)) {
                 model.addAttribute("correct","Right on Bro! Keep calm and code on");
+                answersCorrect();
             } else {
                 model.addAttribute("incorrect","Sorry DUUUDE....Better luck next time!");
+                answersWrong();
             }
         }
         return "quiz/answer";
     }
+
+    public int answersCorrect () {
+
+        int correct =0;
+            for(int i = 0; i < correct; i++) {
+                System.out.println("The number of questions you have answered correctly is: "+correct);
+            }
+            return correct;
+    }
+
+    public int answersWrong () {
+
+        int wrong = 0;
+            for (int i = 0; i < wrong; i++) {
+                System.out.println("The number of questions you have answered wrong is:" +wrong);
+            }
+            return wrong;
+    }
+
+
 
     private int countIterable(Iterable<?> it) {
         if (it instanceof Collection)
@@ -161,5 +183,8 @@ public class QuizController {
         int randomNumber = random.nextInt((max - min) +1) +min;
         return randomNumber;
     }
+
+
+
 
 }
