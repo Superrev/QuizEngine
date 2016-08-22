@@ -2,6 +2,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+
 <head>
     <title>View All Questions</title>
 </head>
@@ -49,6 +50,9 @@
                     </c:forEach>
                 </c:if>
             </td>
+
+            <td><a href="/admin/deleteQuestion?id=${quizQuestion.id}">DELETE<c:out value="${quizQuestion.id}" /></a></td>
+
         </tr>
     </c:forEach>
 </table>
@@ -56,6 +60,11 @@
 <a href="/">HOME</a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="/admin/addQuestion">Add New Question</a>
+||
+<a href="/restData/getAllQuestions">Bulk Download Questions</a>
+||
+<a href="/admin/uploadQuestions">Bulk Upload Questions</a>
+
 </body>
 </body>
 </html>

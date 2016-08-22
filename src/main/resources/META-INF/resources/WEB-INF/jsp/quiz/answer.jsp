@@ -2,8 +2,10 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
+
 <head>
-    <title>QUIZ ANSWER</title>
+    <span style="color:white" >QUIZ ANSWER</span>
     <c:if test="${quizQuestion.questionType == 'CODE'}">
         <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/dracula.css">
         <script src="https://highlightjs.org/static/highlight.pack.js"></script>
@@ -11,7 +13,7 @@
     </c:if>
 </head>
 <body>
-<h1>QUIZ ANSWER</h1>
+<span style="color:white">QUIZ ANSWER</span>
 
 <c:if test="${not empty correct}">
     <div style="color:lawngreen;font-weight: bold;">
@@ -25,8 +27,8 @@
 </c:if>
 <br><br>
 
-QUESTION: <c:out value="${quizQuestion.question}" /><br>
-ANSWER:
+<span style="color:white" QUESTION: <c:out value="${quizQuestion.question}" /><br>
+<span style="color: white;"ANSWER:
     <c:if test="${quizQuestion.questionType == 'MULTIPLE_CHOICE'}">
         <c:out value="${quizQuestion.correctMultipleChoiceAnswer}" />
     </c:if>

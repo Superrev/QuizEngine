@@ -1,13 +1,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
+
 <head>
-    <title>QUIZ QUESTION</title>
+    <span style="color: white;" title>QUIZ QUESTION</span>
 </head>
 <body>
-<h1>QUIZ QUESTION</h1>
+<span style="color: white" h1>QUIZ QUESTION</span>
 
-QUESTION: <c:out value="${quizQuestion.question}" />
+<span style="color:white;" QUESTION: <c:out value="${quizQuestion.question}" />
 <br><br><br>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
 <c:if test="${quizQuestion.questionType == 'MULTIPLE_CHOICE'}">
@@ -23,5 +25,6 @@ QUESTION: <c:out value="${quizQuestion.question}" />
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 <br><br><input type="submit" name="Show Me">
 </form>
+</body>
 </body>
 </html>
