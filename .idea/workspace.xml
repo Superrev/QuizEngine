@@ -67,8 +67,8 @@
       <file leaf-file-name="question.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -897,7 +897,7 @@
       <workItem from="1471658585433" duration="14239000" />
       <workItem from="1471965569216" duration="7199000" />
       <workItem from="1471980454610" duration="2373000" />
-      <workItem from="1471985898446" duration="2439000" />
+      <workItem from="1471985898446" duration="2630000" />
     </task>
     <task id="LOCAL-00001" summary="Java Review Quiz Engine">
       <created>1471387567194</created>
@@ -931,7 +931,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80868000" />
+    <option name="totallyTimeSpent" value="81059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="0" />
@@ -1385,8 +1385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
