@@ -1,16 +1,19 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
+
+<title style="color: white;" title>QUIZ QUESTION</title>
 
 <head>
-    <span style="color: white;" title>QUIZ QUESTION</span>
+    <link type="text/css" rel="stylesheet" href="/css/question.css"/>
 </head>
-<body>
-<span style="color: white" h1>QUIZ QUESTION</span>
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
 
-<span style="color:white;" QUESTION: <c:out value="${quizQuestion.question}" />
+<h1>QUIZ QUESTION</h1>
+
+QUESTION: <c:out value="${quizQuestion.question}" />
 <br><br><br>
+    <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
 <c:if test="${quizQuestion.questionType == 'MULTIPLE_CHOICE'}">
     <input type="radio" name="multiAnswer" value="yes"> :<c:out value="${quizQuestion.correctMultipleChoiceAnswer}" /><br>
@@ -22,9 +25,10 @@
     True: <input type="radio" name="trueFalseAnswer" value="true"><br>
     False: <input type="radio" name="trueFalseAnswer" value="false">
 </c:if>
+
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 <br><br><input type="submit" name="Show Me">
 </form>
-</body>
+        </section>
 </body>
 </html>
