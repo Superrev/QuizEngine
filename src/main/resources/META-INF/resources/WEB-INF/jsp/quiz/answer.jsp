@@ -27,7 +27,7 @@
 </c:if>
 <br><br>
 
-<span style="color:white" QUESTION: <c:out value="${quizQuestion.question}" /><br>
+<span style="color: #ffffff;" QUESTION: <c:out value="${quizQuestion.question}" /><br>
 <span style="color: white;"ANSWER:
     <c:if test="${quizQuestion.questionType == 'MULTIPLE_CHOICE'}">
         <c:out value="${quizQuestion.correctMultipleChoiceAnswer}" />

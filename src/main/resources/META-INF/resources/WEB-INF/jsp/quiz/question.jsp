@@ -10,7 +10,7 @@
 <body background="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11888114_10207459181342686_6584036298304609240_n.jpg?oh=75cdc6b8734bece8a442720e16aab592&oe=584A7509">
 <h1>QUIZ QUESTION</h1>
 
- QUESTION: <c:out value="${quizQuestion.question}" />
+<span style="color: #ffffff;" QUESTION: <c:out value="${quizQuestion.question}" />
 <br><br><br>
     <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
