@@ -2,16 +2,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
+<title style="color: white;" title>QUIZ QUESTION</title>
 
 <head>
-    <span style="color: white;" title>QUIZ QUESTION</span>
     <link type="text/css" rel="stylesheet" href="/css/question.css"/>
 </head>
 <body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
 
 <h1>QUIZ QUESTION</h1>
 
-QUESTION: <c:out value="${quizQuestion.question}" />
+<span style="color: white" QUESTION: <c:out value="${quizQuestion.question}" /> ></span>
 <br><br><br>
     <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
