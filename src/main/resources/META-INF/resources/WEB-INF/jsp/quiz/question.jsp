@@ -2,12 +2,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
-<title style="color: black;" title>QUIZ QUESTION</title>
+<title style="color: whitesmoke;" title>QUIZ QUESTION</title>
 
 <head>
     <link type="text/css" rel="stylesheet" href="/css/question.css"/>
 </head>
-<body background="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTB9rZyfmbJFMG6f2SvL8GUNm_1SrDwqiaGppxpMDoFv_lRgFV8A">
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
 
 <h1>QUIZ QUESTION</h1>
 
