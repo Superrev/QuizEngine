@@ -172,24 +172,24 @@ public class QuizController {
         if (quizQuestion.getQuestionType().equals(QuizQuestion.QuestionType.MULTIPLE_CHOICE)) {
             if (multiAnswer != null && multiAnswer.equalsIgnoreCase("yes")) {
                 model.addAttribute("correct", "Right on Bro! Keep calm and code on");
-                int c = tracker.getCorrect();
-                tracker.setCorrect(c++);
+//                int c = tracker.getCorrect();
+                tracker.setCorrect(tracker.getCorrect()+1);
             } else {
                 model.addAttribute("incorrect", "Sorry DUUUDE....Better luck next time!");
-                int w = tracker.getIncorrect();
-                tracker.setIncorrect(w++);
+//                int w = tracker.getIncorrect();
+                tracker.setIncorrect(tracker.getIncorrect()+1);
                 // answersWrong();
             }
         } else if (quizQuestion.getQuestionType().equals(QuizQuestion.QuestionType.TRUE_FALSE)) {
             if (trueFalseAnswer != null && quizQuestion.isTrueOrFalse() == Boolean.valueOf(trueFalseAnswer)) {
                 model.addAttribute("correct", "Right on Bro! Keep calm and code on");
                 int c = tracker.getCorrect();
-                tracker.setCorrect(c++);
+                tracker.setCorrect(tracker.getCorrect()+1);
                 // answersCorrect();
             } else {
                 model.addAttribute("incorrect", "Sorry DUUUDE....Better luck next time!");
                 int w = tracker.getIncorrect();
-                tracker.setIncorrect(w++);
+                tracker.setIncorrect(tracker.getIncorrect()+1);
                 //answersWrong();
             }
         }

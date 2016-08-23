@@ -2,7 +2,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
+<%--<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">--%>
 
 <head>
     <span style="color:white" >QUIZ ANSWER</span>
