@@ -2,13 +2,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
-<title style="color: whitesmoke;" title>QUIZ QUESTION</title>
+<title>QUIZ QUESTION</title>
 
 <head>
     <link type="text/css" rel="stylesheet" href="/css/question.css"/>
 </head>
-<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
-
+<body>
 <h1>QUIZ QUESTION</h1>
 
  QUESTION: <c:out value="${quizQuestion.question}" />
