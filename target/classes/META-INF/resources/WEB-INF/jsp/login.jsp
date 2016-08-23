@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<body background="http://wallpapercave.com/wp/4fomzZe.png"; style="width: 50%; height: 50%">
+<body background="http://wallpapercave.com/wp/4fomzZe.png">
 
 <head>
     <title>Login</title>
