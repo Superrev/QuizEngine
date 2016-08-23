@@ -11,7 +11,7 @@
 
 <h1>QUIZ QUESTION</h1>
 
-<div QUESTION: <c:out value="${quizQuestion.question}" />
+ QUESTION: <c:out value="${quizQuestion.question}" />
 <br><br><br>
     <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
@@ -30,6 +30,5 @@
 <br><br><input type="submit" name="Show Me">
 </form>
         </section>
-</div>
 </body>
 </html>
