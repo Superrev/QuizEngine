@@ -80,9 +80,9 @@ public class AdminController {
         String returnView = "";
         if (!QuizQuestionsFile.isEmpty()) {
             try {
-                Files.write(Paths.get("/Users/katiebunnell/UPLOADS_Quiz_Engine/"+QuizQuestionsFile.getOriginalFilename()),QuizQuestionsFile.getBytes());
+                Files.write(Paths.get(QuizQuestionsFile.getOriginalFilename()),QuizQuestionsFile.getBytes());
                 System.out.println("-------- File Upload Successful");
-                addUploadToDatabase("/Users/katiebunnell/UPLOADS_Quiz_Engine/"+QuizQuestionsFile.getOriginalFilename());
+                addUploadToDatabase(QuizQuestionsFile.getOriginalFilename());
             } catch (IOException | RuntimeException e) {
                 e.printStackTrace();
             }
