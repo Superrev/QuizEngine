@@ -10,7 +10,7 @@
 <body>
 <h1>QUIZ QUESTION</h1>
 
-<;" QUESTION: <c:out value="${quizQuestion.question}" />
+QUESTION: <c:out  value="${quizQuestion.question}" />
 <br><br><br>
     <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
