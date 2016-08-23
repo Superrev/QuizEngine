@@ -11,7 +11,7 @@
 
 <h1>QUIZ QUESTION</h1>
 
-<span style="color: white" QUESTION: <c:out value="${quizQuestion.question}" /> ></span>
+QUESTION: <c:out value="${quizQuestion.question}" />
 <br><br><br>
     <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
