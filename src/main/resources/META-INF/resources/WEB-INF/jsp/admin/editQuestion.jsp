@@ -120,7 +120,7 @@
         <div id="type4" style="display:none">
     <form:label path="commandLines">commandLines:</form:label>
     <br>
-    Line 01: <form:textarea path="commandLines[0]" maxlength="255" size="100" />
+    Line 01: <form:input path="commandLines[0]" maxlength="255" size="100" />
     <br>
         </div>
     <br>

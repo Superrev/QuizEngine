@@ -109,7 +109,7 @@
 <div id="type4" style="display:none">
     <form:label path="commandLines">CommandLines:</form:label>
         <br>
-        line 1: <form:textarea path="commandLines[1]" maxlegth="255" size="100"/>
+        line 1: <form:input path="commandLines[0]" maxlegth="255" size="100"/>
     <br>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     <input type="submit">
