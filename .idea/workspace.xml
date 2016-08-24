@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736a9e33-7fbd-4ec5-9a77-28a1c7239f5e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css" />
     </list>
     <ignored path="QuizEngine2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="question.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="question.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -177,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/main/java/quizEngine/entities/QuizQuestion.java" />
         <option value="$PROJECT_DIR$/src/main/java/quizEngine/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css" />
       </list>
     </option>
   </component>
@@ -931,7 +931,7 @@
       <workItem from="1471980454610" duration="2373000" />
       <workItem from="1471985898446" duration="3472000" />
       <workItem from="1471993589975" duration="1130000" />
-      <workItem from="1472059027533" duration="2612000" />
+      <workItem from="1472059027533" duration="2730000" />
     </task>
     <task id="LOCAL-00001" summary="Java Review Quiz Engine">
       <created>1471387567194</created>
@@ -965,7 +965,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85643000" />
+    <option name="totallyTimeSpent" value="85761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="0" />
@@ -1416,18 +1416,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/WEB-INF/jsp/quiz/question.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/css/question.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
