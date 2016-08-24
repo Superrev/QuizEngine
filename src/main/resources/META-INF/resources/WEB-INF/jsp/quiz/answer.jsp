@@ -21,7 +21,7 @@
     </div>
 </c:if>
 <c:if test="${not empty incorrect}">
-    <div style="color:blue;font-weight: bold;">
+    <div style="color:lawngreen;font-weight: bold;">
         <c:out value="${incorrect}" />
     </div>
 </c:if>
