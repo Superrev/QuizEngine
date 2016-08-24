@@ -7,7 +7,7 @@
 <head>
     <link type="text/css" rel="stylesheet" href="/css/question.css"/>
 </head>
-<body>
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
 <h1>QUIZ QUESTION</h1>
 
 QUESTION: <c:out  value="${quizQuestion.question}" />
