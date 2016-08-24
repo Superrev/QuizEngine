@@ -8,7 +8,7 @@ import java.util.HashMap;
 @Entity
 @Table(name = "quiz_question")
 public class QuizQuestion {
-    public static enum Category { ALL, CORE_JAVA, JAVA_IO, SQL, JAVA_DATABASE, SERVLET, JSP, HTML, CSS, SPRING, HIBERNATE, ANDROID };
+    public static enum Category { ALL, CORE_JAVA, JAVA_IO, SQL, JAVA_DATABASE, SERVLET, JSP, HTML, CSS, SPRING, HIBERNATE, ANDROID, COMMAND_LINE };
     public static enum QuestionType { ALL, MULTIPLE_CHOICE, TRUE_FALSE, CODE };
     public static enum Difficulty { ALL, EASY, AVERAGE, DIFFICULT, CRAZY_HARD };
     public static enum QuizType { REGULAR, FLASH_CARD };
