@@ -26,7 +26,7 @@ QUESTION: <c:out  value="${quizQuestion.question}" />
 </c:if>
 
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-<br><br><input type="submit" name="Show Me">
+<br><br><input type="submit" name="Show me">
 </form>
         </section>
 </body>
