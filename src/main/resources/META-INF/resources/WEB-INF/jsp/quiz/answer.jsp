@@ -58,6 +58,15 @@
         </c:forEach>
         </code></pre>
     </c:if>
+
+            <c:if test="${quizQuestion.questionType == 'COMMANDLINE'}">
+
+                <c:forEach var="commandLine" items="${quizQuestion.commandLine}">
+            <c:if test="${not empty commandLine && fn:length(commandLine)>0}">
+                <c:out value="${commandLine}"/>
+            </c:if>
+                </c:forEach>
+                </c:if>
 <br><br>
 <form action="/quiz/nextQuestion" method="POST">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
