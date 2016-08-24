@@ -12,7 +12,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </c:if>
 </head>
-<body>
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
 <span style="color:white">QUIZ ANSWER</span>
 
 <c:if test="${not empty correct}">
