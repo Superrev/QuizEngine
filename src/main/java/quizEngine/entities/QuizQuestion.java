@@ -9,7 +9,7 @@ import java.util.HashMap;
 @Table(name = "quiz_question")
 public class QuizQuestion {
     public static enum Category { ALL, CORE_JAVA, JAVA_IO, SQL, JAVA_DATABASE, SERVLET, JSP, HTML, CSS, SPRING, HIBERNATE, ANDROID, COMMAND_LINE };
-    public static enum QuestionType { ALL, MULTIPLE_CHOICE, TRUE_FALSE, CODE, COMMAND };
+    public static enum QuestionType { ALL, MULTIPLE_CHOICE, TRUE_FALSE, CODE };
     public static enum Difficulty { ALL, EASY, AVERAGE, DIFFICULT, CRAZY_HARD };
     public static enum QuizType { REGULAR, FLASH_CARD };
     public static enum QuizSize { SMALL, MEDIUM, LARGE, ALL };
@@ -36,7 +36,6 @@ public class QuizQuestion {
     private String wrongMultipleChoiceAnswer3;
     private boolean trueOrFalse;
     private ArrayList<String> codeLines;
-    private ArrayList<String> commandLines;
 
 
 
@@ -129,13 +128,6 @@ public class QuizQuestion {
         this.codeLines = codeLines;
     }
 
-    public ArrayList<String> getCommandLines() {
-        return commandLines;
-    }
-
-    public void setCommandLines(ArrayList<String> commandLines) {
-        this.commandLines = commandLines;
-    }
 
 //    public ArrayList<Integer> getTotalQuestions)
 }

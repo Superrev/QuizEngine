@@ -49,13 +49,7 @@
                         </c:if>
                     </c:forEach>
                 </c:if>
-                    <c:if test="${quizQuestion.questionType == 'COMMAND'}">
-                    <c:forEach var="commandLine" items="${quizQuestion.commandLine}">
-                        <c:if test="${not empty commandLine}">
-                            <c:out value="${commandLine}"/><br>
-                        </c:if>
-                    </c:forEach>
-                </c:if>
+
             </td>
 
             <td><a href="/admin/deleteQuestion?id=${quizQuestion.id}">DELETE<c:out value="${quizQuestion.id}" /></a></td>

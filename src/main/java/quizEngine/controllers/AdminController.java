@@ -110,7 +110,6 @@ public class AdminController {
                 quizQuestion.setWrongMultipleChoiceAnswer3(uploadedQuizQuestion.getWrongMultipleChoiceAnswer3());
                 quizQuestion.setTrueOrFalse(uploadedQuizQuestion.isTrueOrFalse());
                 quizQuestion.setCodeLines(uploadedQuizQuestion.getCodeLines());
-                quizQuestion.setCommandLines(uploadedQuizQuestion.getCommandLines());
                 quizQuestionDAO.save(quizQuestion);
             }
         } catch (IOException ioe) {
