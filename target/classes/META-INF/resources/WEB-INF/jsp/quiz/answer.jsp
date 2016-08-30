@@ -2,7 +2,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
+<%--<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">--%>
 
 <head>
     <span style="color:white" >QUIZ ANSWER</span>
@@ -12,7 +12,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </c:if>
 </head>
-<body>
+<body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
 <span style="color:white">QUIZ ANSWER</span>
 
 <c:if test="${not empty correct}">
@@ -21,13 +21,13 @@
     </div>
 </c:if>
 <c:if test="${not empty incorrect}">
-    <div style="color:blue;font-weight: bold;">
+    <div style="color:lawngreen;font-weight: bold;">
         <c:out value="${incorrect}" />
     </div>
 </c:if>
 <br><br>
 
-<span style="color:white" QUESTION: <c:out value="${quizQuestion.question}" /><br>
+<span style="color: #ffffff;" QUESTION: <c:out value="${quizQuestion.question}" /><br>
 <span style="color: white;"ANSWER:
     <c:if test="${quizQuestion.questionType == 'MULTIPLE_CHOICE'}">
         <c:out value="${quizQuestion.correctMultipleChoiceAnswer}" />
@@ -58,6 +58,8 @@
         </c:forEach>
         </code></pre>
     </c:if>
+
+
 <br><br>
 <form action="/quiz/nextQuestion" method="POST">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />

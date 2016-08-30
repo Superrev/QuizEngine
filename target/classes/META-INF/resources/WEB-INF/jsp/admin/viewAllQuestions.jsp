@@ -49,6 +49,7 @@
                         </c:if>
                     </c:forEach>
                 </c:if>
+
             </td>
 
             <td><a href="/admin/deleteQuestion?id=${quizQuestion.id}">DELETE<c:out value="${quizQuestion.id}" /></a></td>

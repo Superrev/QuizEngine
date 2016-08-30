@@ -46,6 +46,7 @@
     <form:input path="question" id="question" maxlength="255" size="100" />
     <br>
     <div id="type1">
+        <input content="img">
         <form:label path="correctMultipleChoiceAnswer">Correct Multiple Choice Answer:</form:label>
         <form:input path="correctMultipleChoiceAnswer" id="correctMultipleChoiceAnswer" maxlength="255" size="100" />
         <br>
@@ -106,6 +107,7 @@
         <br>
         Line 20: <form:input path="codeLines[19]" maxlength="255" size="100" />
     </div>
+
     <br>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     <input type="submit">

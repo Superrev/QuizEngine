@@ -9,7 +9,7 @@
 <body background="http://wallpapercave.com/wp/4fomzZe.png">
     <section>
 <h1>ARE YOU THE ONE?</h1>
-
+<p>If you are not thee original creator please do not add questions to quiz (A.K.A. THE MATRIX)</p>
 <c:if test="${param.error != null}">
     <br><br><div>There has been a Glitch....You do not have the Authority here...Agents have been Notified</div><br><br>
 </c:if>
@@ -27,8 +27,9 @@
         <input type="submit" value="Sign In"/>
 </form>
     </section>
+
 <br>
-<a href="/">Home</div>
+<a href="/">Home</a>
 <br>
 </body>
 </html>

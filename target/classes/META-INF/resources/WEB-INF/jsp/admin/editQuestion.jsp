@@ -12,14 +12,19 @@
                 document.getElementById("type1").style.display = 'block';
                 document.getElementById("type2").style.display = 'none';
                 document.getElementById("type3").style.display = 'none';
+                document.getElementById("type4").style.display = 'none';
             } else if(optionValue == 'TRUE_FALSE') {
                 document.getElementById("type1").style.display = 'none';
                 document.getElementById("type2").style.display = 'block';
                 document.getElementById("type3").style.display = 'none';
+                document.getElementById("type4").style.display = 'none';
+
             } else if(optionValue == 'CODE') {
                 document.getElementById("type1").style.display = 'none';
                 document.getElementById("type2").style.display = 'none';
                 document.getElementById("type3").style.display = 'block';
+                document.getElementById("type4").style.display = 'none';
+
             }
         }
     </script>
@@ -107,6 +112,7 @@
         <br>
         Line 20: <form:input path="codeLines[19]" maxlength="255" size="100" />
     </div>
+
     <br>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     <input type="submit" value="Save Changes"><input type="button" value="Cancel" onclick="location.href='/admin/';">

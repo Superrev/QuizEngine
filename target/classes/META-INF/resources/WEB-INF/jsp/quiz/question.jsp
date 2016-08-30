@@ -2,16 +2,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
-<title style="color: white;" title>QUIZ QUESTION</title>
+<title>QUIZ QUESTION</title>
 
 <head>
     <link type="text/css" rel="stylesheet" href="/css/question.css"/>
 </head>
 <body background="http://wallpapercave.com/wp/gB3sgTh.jpg">
-
 <h1>QUIZ QUESTION</h1>
 
-QUESTION: <c:out value="${quizQuestion.question}" />
+QUESTION: <c:out  value="${quizQuestion.question}" />
 <br><br><br>
     <section>
 <form name="questionForm" method="POST" action="/quiz/questionAnswer">
@@ -27,7 +26,7 @@ QUESTION: <c:out value="${quizQuestion.question}" />
 </c:if>
 
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-<br><br><input type="submit" name="Show Me">
+<br><br><input type="submit" name="Show me">
 </form>
         </section>
 </body>
